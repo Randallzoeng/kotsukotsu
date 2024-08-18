@@ -4,8 +4,8 @@ WORKDIR /code
 
 COPY ./requirements.txt /code/requirements.txt
 
-# RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
-RUN pip install  -i https://pypi.tuna.tsinghua.edu.cn/simple/  -r requirements.txt
+RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
+# RUN pip install  -i https://pypi.tuna.tsinghua.edu.cn/simple/  -r requirements.txt
 
 
 COPY ./main.py /code/
